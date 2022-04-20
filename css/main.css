@@ -2,7 +2,7 @@ html {
     background-color: #EDE6DB;
 }
 .content {
-    max-width: 960px;
+    max-width: 1200;
     margin: 0 auto;
     background-color: white;
     position: relative;
@@ -11,7 +11,7 @@ body {
     font-family: 'Barlow Semi Condensed', Arial, sans-serif;
     font-weight: 400;
     background-color: white;
-    max-width: 940px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 h1 {
@@ -31,7 +31,7 @@ h1 {
     padding-top: .25em;
     padding-bottom: .25em;
     text-align: center;
-    margin-right: 35%;
+    margin-right: 25%;
     margin-top: 0;
     margin-bottom: 0;
 }
