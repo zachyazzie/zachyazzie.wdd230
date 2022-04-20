@@ -1,3 +1,6 @@
+html {
+    background-color: #EDE6DB;
+}
 .content {
     max-width: 960px;
     margin: 0 auto;
@@ -7,6 +10,9 @@
 body {
     font-family: 'Barlow Semi Condensed', Arial, sans-serif;
     font-weight: 400;
+    background-color: white;
+    max-width: 940px;
+    margin: 0 auto;
 }
 h1 {
     font-family: 'Barlow Semi Condensed', Arial, sans-serif;
@@ -26,6 +32,8 @@ h1 {
     padding-bottom: .25em;
     text-align: center;
     margin-right: 35%;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 h2 {
     margin-left: 2em;
