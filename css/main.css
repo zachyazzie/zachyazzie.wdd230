@@ -71,7 +71,6 @@ footer {
 .copyright {
     color: white;
     text-align: center;
-    margin-right: 35%;
 }
 .copyright a:link {
     color: white;
@@ -82,5 +81,4 @@ footer {
 .footer-updated {
     color: #FFEBC1;
     text-align: center;
-    margin-right: 35%;
 }
