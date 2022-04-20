@@ -2,7 +2,7 @@ html {
     background-color: #EDE6DB;
 }
 .content {
-    max-width: 1200;
+    max-width: 1200px;
     margin: 0 auto;
     background-color: white;
     position: relative;
@@ -86,6 +86,6 @@ footer {
     color: white;
 }
 .footer-updated {
-    color: #FFEBC1;
+    color: white;
     text-align: center;
 }
