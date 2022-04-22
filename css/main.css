@@ -52,7 +52,6 @@ li a:hover {
 .headshot {
     width: 200px;
     border-radius: 5%;
-    float: right;
     filter: drop-shadow(0 0 0.75rem black);
     position: absolute;
     /* right: 50px;
