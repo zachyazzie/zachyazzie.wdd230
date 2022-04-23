@@ -1,64 +1,61 @@
 html {
+    background-color: white;
     background-color: #EDE6DB;
-}
-.content {
-    max-width: 1200px;
-    margin: 0 auto;
-    background-color: white;
-    position: relative;
-  }
-body {
-    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-    font-weight: 400;
-    background-color: white;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-h1 {
-    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-    font-weight: 700;
-}
-.main-heading-background {
+}  
+header {
     color: white;
     background: #417D7A;
     border-radius: 10px;
     padding-left: 2em;
     margin-left: .25em;
     margin-right: .25em;
-}
-.main-heading {
-    font-size: 3em;  
-    padding-top: .25em;
-    padding-bottom: .25em;
     text-align: center;
-    margin-right: 25%;
-    margin-top: 0;
-    margin-bottom: 0;
+}      
+body {
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+    font-weight: 400;
+    background-color: white;
+    margin: 0 auto;
+    font-size: 1rem;    
+    line-height: 2rem;
+    padding: 0;
+}   
+h1 {
+    font-weight: 700;
+    padding-bottom: 1em;
+}  
+main{   
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
 }
-h2 {
+h1{
+    font-size: 1.5em;
+    text-align:center;
+    align-items: center;
+    padding-top: 20px;
+    padding-right: 35px; 
+}
+h2{
     margin-left: 2em;
     padding-bottom: .25em;
     border-bottom: 1px solid grey;
-    width: 80%;
+    width: 85%;
     display: block;
 }
+.headshot{
+    width: 200px;
+    border-radius: 5%;
+    filter: drop-shadow(0 0 0.75rem black);
+    }  
 ul {
     margin-left: 3em;
     margin-bottom: 2em;
 }
 li a:hover {
     color:#FF6363;
-}
-.headshot {
-    width: 200px;
-    border-radius: 5%;
-    filter: drop-shadow(0 0 0.75rem black);
-    position: absolute;
-    /* right: 50px;
-    top: 20px; */
-    right: 5%;
-    top: 5%;
-    
 }
 a:link {
     color: #1A3C40;
@@ -84,7 +81,10 @@ footer {
 .copyright a:visited {
     color: white;
 }
+.copyright a:hover {
+    color:#FF6363;
+}
 .footer-updated {
     color: white;
     text-align: center;
-}
+    }
