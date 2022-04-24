@@ -40,6 +40,7 @@ h2 {
     margin-bottom: 0;
 }
 .assignment-list {
+    margin-top: 1em;
     margin-left: 2em;
     padding-bottom: .25em;
     border-bottom: 1px solid grey;
