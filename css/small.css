@@ -6,9 +6,6 @@ header {
     color: white;
     background: #417D7A;
     border-radius: 10px;
-    padding-left: 2em;
-    margin-left: .25em;
-    margin-right: .25em;
     text-align: center;
 }      
 body {
@@ -20,10 +17,13 @@ body {
     line-height: 2rem;
     padding: 0;
 }   
-h1 {
+.main-page-h1 {
     font-weight: 700;
     padding-bottom: 1em;
-}  
+    padding-top: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+} 
 main{   
     margin-left: 20px;
     margin-right: 10px;
@@ -34,11 +34,12 @@ main{
 h1{
     font-size: 1.5em;
     text-align:center;
-    align-items: center;
-    padding-top: 20px;
-    padding-right: 35px; 
 }
-h2{
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.assignment-list {
     margin-left: 2em;
     padding-bottom: .25em;
     border-bottom: 1px solid grey;
@@ -49,6 +50,8 @@ h2{
     width: 200px;
     border-radius: 5%;
     filter: drop-shadow(0 0 0.75rem black);
+    margin-top: 1em;
+
     }  
 ul {
     margin-left: 3em;
@@ -63,6 +66,61 @@ a:link {
 a:visited {
     color: #1A3C40;
 }
+
+/* DESIGN PRINCIPLES DOCUMENT */
+.design-principles-h1 {
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1em;
+}
+.assignment-page-name {
+    font-weight: 700;
+    padding-bottom: 1em;
+}
+.column-container {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-right: 1em;
+    margin-left: 1em;
+}
+.column-container h2 {
+    text-align: center;
+}
+.column {
+    border-radius: 20px;
+    background-color: #f5e8d4;
+    max-width: 410px;
+    margin: 0 auto;
+}
+.column img {
+    width: 90%;
+}
+.column h2 {
+    margin-top: 1em;
+    text-decoration: underline;
+}
+.column p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.principle-image-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.principle-image-info a {
+    font-size: 1.25em;
+    margin-bottom: 1em;
+    text-decoration: none;
+}
+.principle-image-info a:hover{
+    color:#FF6363;
+}
+
+
+
+/* FOOTER */
 footer {
     background: #417D7A;
     border-radius: 10px;
