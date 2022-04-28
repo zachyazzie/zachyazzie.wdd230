@@ -1,0 +1,133 @@
+/* FONT CHOICE: HEEBO */
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700;900&display=swap');
+
+:root {
+
+    --primary-color: #74959A;
+    --secondary-color: #F1E0AC;
+    --accent1-color: #98B4AA;
+    --accent2-color: #495371;
+    
+    --site-font: 'Heebo', Arial, sans-serif;
+  
+    --headline-color-on-white: #46494C;
+    --headline-color-on-color: white; 
+    --paragraph-color-on-white: #46494C;
+    --paragraph-color-on-color: white;
+    --paragraph-background-color: #4C5C68;
+    --nav-link-color: #DCDCDD;
+    --nav-background-color: #4C5C68;
+    --nav-hover-link-color: #4C5C68;
+    --nav-hover-background-color: #DCDCDD;
+}
+
+html {
+    background-color: #EDE6DB;
+
+}  
+header {
+    color: white;
+    background: #417D7A;
+    text-align: center;
+}
+#content {
+    max-width: 1300;
+    margin: 0 auto;
+}
+body {
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1rem;    
+    line-height: 2rem;
+    padding: 0;
+    background-color: white;
+    max-width: 1300px;
+    margin: 0 auto;
+}   
+
+main{   
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 10px;
+}
+h1{
+    font-size: 1.5em;
+    text-align:center;
+    margin-top: 0;
+}
+h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    margin-left: 3em;
+    margin-bottom: 2em;
+}
+li a:hover {
+    color:#FF6363;
+}
+a:link {
+    color: #1A3C40;
+}
+a:visited {
+    color: #1A3C40;
+}
+
+/* NAV */
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #1A3C40; 
+	} 
+nav ul li {  
+	display: block; 
+    color: white;
+	} 
+nav ul li a { 
+	text-decoration: none; 
+	padding: .2em 1.5em; 
+    padding-bottom: .4em;
+	color: #fff; 
+	background-color: #1A3C40; 
+	} 
+nav ul li a:hover { 
+	color: #1A3C40; 
+	background-color: #fff; 
+	} 
+
+
+
+/* FOOTER */
+footer {
+    background: #417D7A;
+    padding-top: .12em;
+    padding-bottom: .12em;
+}
+.copyright {
+    color: white;
+    text-align: center;
+}
+.copyright a:link {
+    color: white;
+}
+.copyright a:visited {
+    color: white;
+}
+.copyright a:hover {
+    color:#FF6363;
+}
+.footer-updated {
+    color: white;
+    text-align: center;
+    }
