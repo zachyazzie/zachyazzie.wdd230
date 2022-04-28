@@ -22,4 +22,14 @@
         max-width: 875px;
         margin: 0 auto;
     }
+    nav ul li {  
+        display: inline; 
+        } 
+    .site-plan-main {
+        text-align: left;
+}    
+.site-plan-typography h1 {
+    text-align: left;
+}
+
 }

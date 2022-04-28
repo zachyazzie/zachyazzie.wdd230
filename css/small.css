@@ -1,21 +1,25 @@
 html {
-    background-color: white;
     background-color: #EDE6DB;
+
 }  
 header {
     color: white;
     background: #417D7A;
-    border-radius: 10px;
     text-align: center;
-}      
+}
+#content {
+    max-width: 1300;
+    margin: 0 auto;
+}
 body {
     font-family: 'Barlow Semi Condensed', Arial, sans-serif;
     font-weight: 400;
-    background-color: white;
-    margin: 0 auto;
     font-size: 1rem;    
     line-height: 2rem;
     padding: 0;
+    background-color: white;
+    max-width: 1300px;
+    margin: 0 auto;
 }   
 .main-page-h1 {
     font-weight: 700;
@@ -34,6 +38,7 @@ main{
 h1{
     font-size: 1.5em;
     text-align:center;
+    margin-top: 0;
 }
 h2 {
     margin-top: 0;
@@ -67,6 +72,36 @@ a:link {
 a:visited {
     color: #1A3C40;
 }
+
+/* NAV */
+nav a:link {
+    color: white;
+}
+nav a:visited {
+    color: white;
+}
+nav ul { 
+	margin: 0; 
+	padding: 5px; 
+	list-style-type: none; 
+	text-align: center; 
+	background-color: #1A3C40; 
+	} 
+nav ul li {  
+	display: block; 
+    color: white;
+	} 
+nav ul li a { 
+	text-decoration: none; 
+	padding: .2em 1.5em; 
+    padding-bottom: .4em;
+	color: #fff; 
+	background-color: #1A3C40; 
+	} 
+nav ul li a:hover { 
+	color: #1A3C40; 
+	background-color: #fff; 
+	} 
 
 /* DESIGN PRINCIPLES DOCUMENT */
 .design-principles-h1 {
@@ -119,16 +154,68 @@ a:visited {
     color:#FF6363;
 }
 
+/* SITE PLAN */
+.site-plan-h1 {
+    font-weight: 700;
+    padding-bottom: 1em;
+    padding-top: 1em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
 
+.site-plan-top-h2 {
+    margin-top: 1em;
+}
+.site-plan-main {
+    text-align: center;
+}
+.site-plan-main h2 {
+    margin-bottom: 2em;
+    border-bottom: 1px solid grey;
+    width: 100%;
+}
+.site-plan-main {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+.site-plan-headshot {
+    border-radius: 20px;
+    width: 300px;
+}
+.colors {
+    text-align: center;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+}
+.color-1 {
+    background-color: #495371;
+}
+.color-2 {
+    background-color: #74959A;
+}
+.color-3 {
+    background-color: #98B4AA;
+}
+.color-4 {
+    background-color: #F1E0AC;
+}
+.site-plan-typography {
+    font-family: 'Heebo', Arial, sans-serif;
+}
+.site-plan-typography h1 {
+    text-align: center;
+}
+.typography-normal {
+    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
+
+}
 
 /* FOOTER */
 footer {
     background: #417D7A;
-    border-radius: 10px;
     padding-top: .12em;
     padding-bottom: .12em;
-    margin-left: .25em;
-    margin-right: .25em;
 }
 .copyright {
     color: white;
