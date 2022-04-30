@@ -22,101 +22,152 @@
 }
 
 html {
-    background-color: #EDE6DB;
+    background-color: #d8d8d8;
+	font-family: var(--site-font);
 
 }  
-header {
-    color: white;
-    background: #417D7A;
-    text-align: center;
-}
 #content {
     max-width: 1300;
     margin: 0 auto;
 }
 body {
-    font-family: 'Barlow Semi Condensed', Arial, sans-serif;
-    font-weight: 400;
     font-size: 1rem;    
     line-height: 2rem;
     padding: 0;
     background-color: white;
     max-width: 1300px;
     margin: 0 auto;
-}   
+}
 
-main{   
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    background-color: white;
-    border-radius: 10px;
+/* HEADER START */
+
+.header-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
 }
-h1{
-    font-size: 1.5em;
-    text-align:center;
-    margin-top: 0;
+header {
+	background-color: #74959A ;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: .5em;
 }
-h2 {
+
+.logo {
+	display: flex;
+	align-items: center;
+	margin-left: 0;
+}
+.logo img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+	margin-left: .5rem;
+}
+
+.headings h1 {
+	font-size: 1.5rem;
+	margin-bottom: 0;
+	margin-top: 0;
+	color: white;
+}
+
+.m {
+	letter-spacing: 1pt;
+	color: white;
+	font-weight: 700;
+	font-size: 0.8rem;
     margin-top: 0;
     margin-bottom: 0;
 }
+main {
+	margin-bottom: 2em;
+}
+/* HEADER END */
 
-ul {
-    margin-left: 3em;
-    margin-bottom: 2em;
+/* NAV START */
+/* Small/Phone View ***************/
+nav {
+	margin: 0 auto;
+	background-color: #98B4AA ;
 }
-li a:hover {
-    color:#FF6363;
+.navigation {
+	list-style: none;
+	padding: 0;
+	margin: 0 0 0 0;
 }
-a:link {
-    color: #1A3C40;
+.navigation li:first-child {
+	display: block;
 }
-a:visited {
-    color: #1A3C40;
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: white;
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 
-/* NAV */
-nav a:link {
-    color: white;
+.navigation a.ham::before {
+	content: "☰ ";
 }
-nav a:visited {
-    color: white;
+
+.navigation a:hover {
+	color: black;
+	background-color: #F1E0AC  ;
 }
-nav ul { 
-	margin: 0; 
-	padding: 5px; 
-	list-style-type: none; 
-	text-align: center; 
-	background-color: #1A3C40; 
-	} 
-nav ul li {  
-	display: block; 
-    color: white;
-	} 
-nav ul li a { 
-	text-decoration: none; 
-	padding: .2em 1.5em; 
-    padding-bottom: .4em;
-	color: #fff; 
-	background-color: #1A3C40; 
-	} 
-nav ul li a:hover { 
-	color: #1A3C40; 
-	background-color: #fff; 
-	} 
+
+/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
+  <ul class="navigation responsive">
+*/
+.responsive li {
+	display: block;
+}
+
+.responsive a.ham::before {
+	content: "✖ ";
+}
 
 
+/* NAV END */
 
-/* FOOTER */
+/* PRESTON PAGE START */
+
+.page-title {
+	text-align: center;
+}
+.contentbox {
+	background-color: #DCDCDD;
+	margin: .25em 2em .25em 2em;
+	border: 1px dotted grey;
+	padding-left: 1em;
+}
+
+/* PRESTON PAGE END */
+
+/* FOOTER START*/
+
 footer {
-    background: #417D7A;
+    background: #74959A;
     padding-top: .12em;
     padding-bottom: .12em;
 }
 .copyright {
     color: white;
     text-align: center;
+	margin-bottom: 0;
 }
 .copyright a:link {
     color: white;
@@ -125,9 +176,12 @@ footer {
     color: white;
 }
 .copyright a:hover {
-    color:#FF6363;
+    color:#495371;
 }
 .footer-updated {
     color: white;
     text-align: center;
+	margin-top:0;
     }
+
+/* FOOTER END */

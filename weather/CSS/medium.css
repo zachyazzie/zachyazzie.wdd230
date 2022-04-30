@@ -1,4 +1,15 @@
-@media (min-width: 875px) { 
-    
-
+@media (min-width: 570px) { 
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	.navigation li:first-child {
+		display: none;
+	}
 }

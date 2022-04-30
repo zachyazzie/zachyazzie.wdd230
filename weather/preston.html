@@ -18,31 +18,44 @@
 </head>
 
 <body>
-    <div id="content">    
-    <header>
-      <h1>Alberta Forecast</h1>
-      <h2>Pretty good weather, 'eh?</h2>
-      <img src="images/logo.png" alt="company logo">
+    <div id="content">
+      
+      <header>
+        <div class="logo">
+          <picture>
+            <img src="images/logo.png" alt="weather logo">
+          </picture>
+          <section class="headings">
+            <h1>Alberta Forecast</h1>
+            <p class="m">Pretty good weather, 'eh?</p>
+          </section>
+        </div>  
+      </header>
       <nav>
-        <ul>
-            <li><a href="#" class="nav-bar">Home</a></li>
-            <li><a href="preston.html" class="nav-bar">Preston</a></li>
-            <li><a href="#" class="nav-bar">Fish Haven</a></li>
-            <li><a href="#" class="nav-bar">Storm Center</a></li>
-            <li><a href="#" class="nav-bar">Gallery</a></li>
+        <ul class="navigation">
+          <li><a class="ham" href="#">Menu</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Preston</a></li>
+          <li><a href="#">Soda Springs</a></li>
+          <li><a href="#">Fish Haven</a></li>
+          <li><a href="#">Storm Center</a></li>
+          <li><a href="#">Gallery</a></li>
         </ul>
-    </nav>
-    </header>
-    <main>
-        
+      </nav>
 
+    <main>
+        <h2 class="page-title">Preston Idaho</h2>
+        <div class="contentbox">Hero w/ weather summary</div>
+        <div class="contentbox forecast">5 Day Forecast</div>
+        <div class="contentbox">Article</div>
+        <div class="contentbox">Contact Information</div>
     </main>
     <footer>
-        <p class="copyright">&copy; <span id="current-year"></span> | <a href="../index.html">Zach Yazzie</a> | Utah | <a href="https://www.byui.edu/online">BYUI Online Learning</a></p>
-        <p class="footer-updated">Last Updated: <span id="footer-date"></span></p>
+        <p class="copyright">&copy; Alberta Forecast | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Zach Yazzie</a></p>
+        <p class="footer-updated"><span id="date-in-footer"></span></p>
       </footer>
     
-      <script src="../index.js"></script>
+      <script src="js/index.js"></script>
 </div>
 </body>
 
