@@ -1,29 +1,9 @@
 /* FONT CHOICE: HEEBO */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700;900&display=swap');
 
-:root {
-
-    --primary-color: #74959A;
-    --secondary-color: #F1E0AC;
-    --accent1-color: #98B4AA;
-    --accent2-color: #495371;
-    
-    --site-font: 'Heebo', Arial, sans-serif;
-  
-    --headline-color-on-white: #46494C;
-    --headline-color-on-color: white; 
-    --paragraph-color-on-white: #46494C;
-    --paragraph-color-on-color: white;
-    --paragraph-background-color: #4C5C68;
-    --nav-link-color: #DCDCDD;
-    --nav-background-color: #4C5C68;
-    --nav-hover-link-color: #4C5C68;
-    --nav-hover-background-color: #DCDCDD;
-}
-
 html {
     background-color: #d8d8d8;
-	font-family: var(--site-font);
+	font-family: 'Heebo', Arial, sans-serif;
 
 }  
 #content {
