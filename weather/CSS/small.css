@@ -19,6 +19,8 @@ body {
     margin: 0 auto;
 }
 
+
+
 /* HEADER START */
 
 .header-grid {
@@ -76,8 +78,10 @@ main {
 /* Small/Phone View ***************/ 
 nav {
 	margin: 0 auto;
-	background-color: #98B4AA ;
+	background-color: #98B4AA;
+    
 }
+
 .navigation {
 	list-style: none;
 	padding: 0;
@@ -99,15 +103,19 @@ nav {
 	transition: 0.5s;
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
-
+.navigation .current-page {
+    background-color: rgb(246, 246, 246);
+    color: #98B4AA;
+}
 .navigation a.ham::before {
 	content: "☰ ";
 }
 
 .navigation a:hover {
 	color: black;
-	background-color: #F1E0AC  ;
+	background-color: #F1E0AC;
 }
+
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
@@ -122,6 +130,7 @@ nav {
 
 
 /* NAV END */
+
 
 /* PRESTON PAGE START */
 
