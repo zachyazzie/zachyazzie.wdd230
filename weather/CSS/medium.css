@@ -12,4 +12,32 @@
 	.navigation li:first-child {
 		display: none;
 	}
+	/*
+	.preston-hero {
+        margin: 0 auto;
+        position: relative;
+    }
+    .preston-weather-summary {
+        width: 40%;
+        max-width: 350px;
+        position: absolute;
+        top: 295px;
+        margin-left: 2em;
+	}
+	.forecast {
+		margin-top: 50px;
+        display: block;
+        max-width: 75%;
+        margin-left: 12%;
+        text-align: center;
+	}
+	*/
+	.hero-container{
+		margin-bottom: 90px;
+	   }
+	.preston-weather {
+		   transform: translate(0px, 160px);
+		   margin-left: 0;
+		   width: 300px;
+	   }
 }
