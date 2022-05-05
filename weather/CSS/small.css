@@ -65,7 +65,6 @@ main {
 header {
 	background-color: var(--primary-color);
 	display: flex;
-	align-items: left;
 	justify-content: left;
 	margin: 0 auto;
 	padding-top: 1em;
