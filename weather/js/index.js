@@ -1,7 +1,14 @@
-const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation')
+menuFunction();
 
-hambutton.addEventListener('click', () => {mainnav.classList.toggle('responsive')}, false);
+function menuFunction() {
+    var x = document.getElementById("regular-view");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+
+  }
 
 // To solve the mid resizing issue with responsive class on
 window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};

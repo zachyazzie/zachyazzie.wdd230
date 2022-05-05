@@ -20,10 +20,22 @@
 	}
 	.hero-container{
 		margin-bottom: 20px;
+		height: 350px;
 	   }
 	.preston-weather {
-		   transform: translate(0px, 50px);
+		   transform: translate(0px, 70px);
 		   margin-left: 0;
-		   width: 300px;
+		   margin-right: 0;
+		   width: 400px;
 	   }
+	.preston-weather h3 {
+		font-size: 1.5em;;
+	}
+	.preston-weather p {
+		   font-size: 1.2em;;
+	   }
+	   .flex-forecast {
+		max-width: 800px;
+
+	}
 }

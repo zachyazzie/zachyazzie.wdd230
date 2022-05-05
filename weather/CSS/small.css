@@ -7,22 +7,49 @@ html {
 
 }  
 #content {
-    max-width: 1000px;
     margin: 0 auto;
+	background-color: #74959A
 }
 body {
     font-size: 1rem;    
     line-height: 2rem;
     padding: 0;
     background-color: white;
-    max-width: 1000px;
     margin: 0 auto;
+}
+main {
+	max-width: 1000px;
+	margin: 0 auto;
+}
+.header-full-width {
+	max-width: 1000px;
+	margin: 0 auto;
 }
 
 
-
 /* HEADER START */
-
+.header-and-nav {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	background-color: #74959A;
+}
+#header-top {
+	background-color:#74959A;
+	grid-column:1/6;
+}
+.header-all {
+	background-color: #74959A;
+}
+.header-and-nav {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	max-width: 1000px;
+	margin: 0 auto;
+}
+#header-bottom {
+	background-color:#43494a;
+	grid-column:1/7;
+}
 .header-grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -31,18 +58,19 @@ body {
 header {
 	background-color: #74959A;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	align-items: left;
+	justify-content: left;
 	margin: 0 auto;
 	padding-top: 1em;
 	padding-bottom: .5em;
 	margin-top: 0;
+	
+	max-width: 1000px;
 }
-
 .logo {
 	display: flex;
 	align-items: center;
-	margin-left: 0;
+	margin-left: 2em;;
 }
 .logo img {
 	width: 80px;
@@ -77,22 +105,22 @@ main {
 
 /* NAV START */
 /* Small/Phone View ***************/ 
+
+#regular-view {
+	display: none;
+	grid-column: 1/7;
+	text-align: left;
+	max-width: 1000px;
+}
 nav {
 	margin: 0 auto;
-	background-color: #98B4AA;
-    
+	background-color: #43494a;
+	
 }
-
 .navigation {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 0 0;
-}
-.navigation li:first-child {
-	display: block;
-}
-.navigation li {
-	display: none;
 }
 .navigation a {
 	display: block;
@@ -108,32 +136,36 @@ nav {
     background-color: rgb(246, 246, 246);
     color: #98B4AA;
 }
-.navigation a.ham::before {
-	content: "☰ ";
-}
-
 .navigation a:hover {
 	color: black;
 	background-color: #F1E0AC;
+}
+.menu-button {
+	text-align: center;
+	margin-top: 2.2em;
+	margin-right: 2em;
+	grid-column: 6/7;
+	z-index: 10;
+}
+.menu-button a {
+	font-size: 2em;
+	text-decoration: none;
+	color: white;
+
 }
 
 
 /* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
   <ul class="navigation responsive">
 */
-.responsive li {
-	display: block;
-}
 
-.responsive a.ham::before {
-	content: "✖ ";
-}
 
 
 /* NAV END */
 
 
 /* PRESTON PAGE START */
+
 #friday-banner {
  background-color: #FFCE45;
  margin-bottom: 0;
@@ -146,7 +178,9 @@ nav {
 }
 
 .page-title {
-	text-align: center;
+	text-align: left;
+	margin-left: 2em;
+	font-weight: 400;
 }
 .contentbox {
 	background-color: #DCDCDD;
@@ -156,9 +190,10 @@ nav {
 }
 .hero-container{
  background-image: url(../assets/preston-hero.jpg);
- display: flex;
+
  margin-bottom: 250px;
  height: 300px;
+ background-position: center center;
 }
 /*HERO WEATHER INFO START*/
 .preston-weather {
@@ -169,7 +204,6 @@ nav {
 .preston-weather-summary {
 	z-index: 1;
 	max-width: 315px;	
-	margin-left: 2em;
 	background-color: rgba(238, 108, 77, .9);
 	border-radius: 15px;
 	display: grid;
@@ -201,7 +235,7 @@ nav {
 /*HERO WEATHER INFO END*/
 
 .forecast {
-	position: relative;
+	display: none;
 }
 /* PRESTON PAGE END */
 

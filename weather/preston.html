@@ -18,40 +18,49 @@
 </head>
 
 <body>
-    <div id="content">
+    <div id="content banner">
       <div id="friday-banner">
         <h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3>
       </div>
-      <header>
-        <div class="logo">
-          <picture>
-            <img src="images/logo.png" alt="weather logo">
-          </picture>
-          <section class="headings">
-            <h1>Alberta Forecast</h1>
-            <p class="m">Pretty good weather, 'eh?</p>
-          </section>
-        </div>  
-      </header>
-      <nav>
-        <ul class="navigation">
-          <li><a class="ham" href="#">Menu</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a class="current-page" href="#">Preston</a></li>
-          <li><a href="#">Soda Springs</a></li>
-          <li><a href="#">Fish Haven</a></li>
-          <li><a href="#">Storm Center</a></li>
-          <li><a href="#">Gallery</a></li>
-        </ul>
-      </nav>
+    </div>
+    <section class="header-all">
+    <div class="header-and-nav">
+      <div id="header-top">
+        <header>
+          <div class="logo">
+            <picture>
+              <img src="images/logo.png" alt="weather logo">
+            </picture>
+            <section class="headings">
+              <h1>Alberta Forecast</h1>
+              <p class="m">Pretty good weather, 'eh?</p>
+            </section>
+          </div>  
+        </header>
+      </div>
+        <div class="menu-button">
+          <a id="ham" href="#" onclick="menuFunction()">☰</a>
+        </div>
 
+        <div id="header-bottom">
+          <nav id="regular-view">
+            <ul class="navigation">
+              <li><a href="#">Home</a></li>
+              <li><a class="current-page" href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="#">Storm Center</a></li>
+              <li><a href="#">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  
     <main>
         <h2 class="page-title">Preston Idaho</h2>
         
-        <div class="hero-container">
-          <!--<div class="preston-hero">
-            <img src="assets/preston-hero.jpg" alt="image of mountain landscape">
-            </div>-->
+        <section class="hero-container">
           <div class="preston-weather">
           <div class="preston-weather-summary">
             <div class="preston-weather-info-title">
@@ -66,25 +75,59 @@
             </div>
             <div class="preston-weather-info-right">
               <p>Sunny</p>
-              <p>76 F</p>
-              <p>F</p>
+              <p>76°F</p>
+              <p>None</p>
               <p>69%</p>
               <p>5 mph</p>
             </div>
           </div>  
           </div>
-          
-            
+        </section>
 
-        </div>
+        <section class="forecast">
+          <h3>5 Day Forecast</h3>
+          <div class="flex-forecast">
+            <div class="flex-col">
+              <span class="col-head">Mon</span>
+              <img src="assets/sunny.png" alt="sunny day">
+              <span class="data">76°F</span>
+            </div>
+            <div class="flex-col">
+              <span class="col-head">Tue</span>
+              <img src="assets/sunny.png" alt="sunny day">
+              <span class="data">76°F</span>
+            </div>
+            <div class="flex-col">
+              <span class="col-head">Wed</span>
+              <img src="assets/sunny.png" alt="sunny day">
+              <span class="data">76°F</span>
+            </div>
+            <div class="flex-col">
+              <span class="col-head">Thu</span>
+              <img src="assets/sunny.png" alt="sunny day">
+              <span class="data">76°F</span>
+            </div>
+            <div class="flex-col">
+              <span class="col-head">Fri</span>
+              <img src="assets/sunny.png" alt="sunny day">
+              <span class="data">76°F</span>
+            </div>
+          </div>
+        </section>
 
-        <div class="contentbox forecast">5 Day Forecast
-
-        </div>
-
-        <div class="contentbox">Article
-
-        </div>
+        <section class="preston-article">
+          <h3>A Day to Celebrate</h3>
+          <p>
+            I'm baby four dollar toast heirloom mlkshk hexagon tumeric, keffiyeh next level organic etsy. 
+            Cliche jean shorts chia pop-up iceland YOLO cronut PBR&B ugh sartorial migas ethical williamsburg 
+            bitters copper mug. Pop-up flannel banjo, air plant crucifix venmo brunch paleo hammock 
+            meditation yes plz microdosing woke sriracha jean shorts. Health goth selfies twee affogato 
+            gluten-free. Franzen four dollar toast viral occupy master cleanse disrupt brunch retro jianbing, 
+            church-key pok pok banh mi fam hammock thundercats. Shaman palo santo taxidermy skateboard. Pug 
+            waistcoat roof party raw denim shaman chicharrones vegan helvetica succulents fixie chambray blog.
+          </p>
+          <img src="assets/community-singing.jpeg" alt="man and woman singing">
+        </section>
 
         <div class="contentbox">Contact Information
 
@@ -97,7 +140,7 @@
     
       <script src="js/index.js"></script>
       <script src="js/hideBanner.js"></script>
-</div>
+
 </body>
 
 </html>
