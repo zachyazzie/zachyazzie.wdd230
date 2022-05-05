@@ -16,8 +16,8 @@ window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('
 // Date in footer & Display message on Friday
 
 const d = new Date()
-var dayNumber = d.getDay()
-let dayOfWeek
+var dayNumber = d.getDay();
+let dayOfWeek;
 if (dayNumber === 0) {
     dayOfWeek = 'Sunday';
     document.getElementById('friday-banner').style.display='none'

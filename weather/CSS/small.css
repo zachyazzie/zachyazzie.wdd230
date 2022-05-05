@@ -1,6 +1,13 @@
 /* FONT CHOICE: HEEBO */
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;400;700;900&display=swap');
-
+:root {
+	--primary-color: #3D5A80;
+	--secondary-color: #98C1D9;
+	--accent-color-1: #E0FBFC;
+	--accent-color-2: #EE6C4D;
+	--accent-color-3: #293241;
+	--accent-color-4: #F1E0AC;
+}
 html {
     background-color: #d8d8d8;
 	font-family: 'Heebo', Arial, sans-serif;
@@ -8,7 +15,7 @@ html {
 }  
 #content {
     margin: 0 auto;
-	background-color: #74959A
+	background-color: var(--primary-color);
 }
 body {
     font-size: 1rem;    
@@ -31,14 +38,14 @@ main {
 .header-and-nav {
 	display: grid;
 	grid-template-columns: repeat(6, 1fr);
-	background-color: #74959A;
+	background-color: var(--primary-color);
 }
 #header-top {
-	background-color:#74959A;
+	background-color: var(--primary-color);
 	grid-column:1/6;
 }
 .header-all {
-	background-color: #74959A;
+	background-color: var(--primary-color);
 }
 .header-and-nav {
 	display: grid;
@@ -47,7 +54,7 @@ main {
 	margin: 0 auto;
 }
 #header-bottom {
-	background-color:#43494a;
+	background-color: var(--accent-color-3);
 	grid-column:1/7;
 }
 .header-grid {
@@ -56,7 +63,7 @@ main {
     grid-gap: 1em;
 }
 header {
-	background-color: #74959A;
+	background-color: var(--primary-color);
 	display: flex;
 	align-items: left;
 	justify-content: left;
@@ -98,9 +105,7 @@ header {
     margin-top: 0;
     margin-bottom: 0;
 }
-main {
-	margin-bottom: 2em;
-}
+
 /* HEADER END */
 
 /* NAV START */
@@ -114,7 +119,7 @@ main {
 }
 nav {
 	margin: 0 auto;
-	background-color: #43494a;
+	background-color: var(--accent-color-3);
 	
 }
 .navigation {
@@ -133,12 +138,12 @@ nav {
 	font-size: clamp(1rem, 2vmin, 1.5rem);
 }
 .navigation .current-page {
-    background-color: rgb(246, 246, 246);
-    color: #98B4AA;
+    background-color: var(--secondary-color);
+    color: var(--accent-color-3);
 }
 .navigation a:hover {
-	color: black;
-	background-color: #F1E0AC;
+	color: var(--accent-color-3);
+	background-color: var(--accent-color-4);
 }
 .menu-button {
 	text-align: center;
@@ -174,20 +179,13 @@ nav {
 #friday-banner h3 {
 	margin-bottom: 0;
 	margin-top: 0;
-	color: #2b2b2b;
+	color: var(--accent-color-3);
 }
 
 .page-title {
-	text-align: left;
-	margin-left: 2em;
-	font-weight: 400;
+	text-align: center;
 }
-.contentbox {
-	background-color: #DCDCDD;
-	margin: .25em 2em .25em 2em;
-	border: 1px dotted grey;
-	padding-left: 1em;
-}
+
 .hero-container{
  background-image: url(../assets/preston-hero.jpg);
 
@@ -204,7 +202,7 @@ nav {
 .preston-weather-summary {
 	z-index: 1;
 	max-width: 315px;	
-	background-color: rgba(238, 108, 77, .9);
+	background-color: rgb(238, 108, 77);
 	border-radius: 15px;
 	display: grid;
 	grid-gap: .5em;
@@ -215,9 +213,12 @@ nav {
 	margin-bottom: 0;
 }
 .preston-weather-info-title {
-	color: yellow;
+	color: var(--accent-color-3);
 	grid-column: 1/3;
 	text-align: center;
+	border-bottom: solid 1px var(--accent-color-3);
+	margin-left: 1em;
+	margin-right: 1em;
 }
 .preston-weather-info-title h3 {
 	margin-top: .25em;
@@ -225,9 +226,11 @@ nav {
 }
 .preston-weather-info-left {
 	text-align: right;
+	color: var(--accent-color-1);
 }
 .preston-weather-info-right {
 	text-align: left;
+	color: var(--accent-color-1);
 }
 .preston-weather-info-left :nth-child(5), .preston-weather-info-right :nth-child(5) {
 	margin-bottom: .25em;
@@ -237,12 +240,75 @@ nav {
 .forecast {
 	display: none;
 }
+
+.preston-article {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+.preston-article h3 {
+	text-align: center;
+}
+.article-img-container{
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.text-wrap img {
+	border-radius: 10px;
+	width: 100%
+}
+.preston-article p {
+	text-align: left;
+}
+.contact {
+	background-color: var(--accent-color-3);
+	margin-bottom: 0;
+	display: flex;
+	justify-content: center;
+}
+.map-img {
+	display: none;
+}
+.contact-info {
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 2em;
+	color: white;
+}
+.contact-info p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.contact-info .address-bottom, .fa-envelope {
+	margin-bottom: 1.5em;
+}
+.contact-info h4 {
+	margin-bottom: 0;
+}
+.fa-location-dot {
+	color:#EE6C4D;
+}
+.fa-phone, .fa-envelope {
+	color: #E0FBFC
+}
+.fa-facebook {
+	color: #1778F2;
+}
+.fa-pinterest {
+	color: #F0002A;
+}
+.fa-twitter {
+	color: #1DA1F2;
+}
+.fa-whatsapp {
+	color: #25D366;
+}
 /* PRESTON PAGE END */
 
 /* FOOTER START*/
 
 footer {
-    background: #74959A;
+    background: var(--primary-color);
     padding-top: .12em;
     padding-bottom: .12em;
 }
