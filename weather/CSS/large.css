@@ -23,11 +23,17 @@
 		height: 350px;
 	   }
 	.preston-weather {
-		   transform: translate(0px, 70px);
+		   transform: translate(0px, 32px);
 		   margin-left: 0;
 		   margin-right: 0;
 		   width: 400px;
 	   }
+	.medium, .small{
+		display: none;
+	}
+	.large {
+		display: block;
+	}
 	.preston-weather h3 {
 		font-size: 1.5em;;
 	}
@@ -46,5 +52,8 @@
 	}
 	.map-img {
 		margin-top: 1.5em;
+	}
+	.hero-container{
+		background-image: url(../assets/background-image-large.jpg);
 	}
 }

@@ -186,15 +186,26 @@ nav {
 }
 
 .hero-container{
- background-image: url(../assets/preston-hero.jpg);
-
+ background-image: url(../assets/background-image-small.jpg);
+ background-repeat: no-repeat;
  margin-bottom: 250px;
  height: 300px;
  background-position: center center;
 }
 /*HERO WEATHER INFO START*/
+.large, .medium{
+	display: none;
+}
+.picture-size-desc {
+position: relative;
+text-align: right;
+top: 15px;
+right: 20px;
+color: var(--accent-color-4);
+}
 .preston-weather {
-	transform: translate(0px, 320px);
+	transform: translate(0px, 280px);
+	margin-top: 2em;
 	margin: 0 auto;
 	width: 300px;
 }
@@ -290,6 +301,9 @@ nav {
 .fa-phone, .fa-envelope {
 	color: #E0FBFC
 }
+.fa-brands {
+	margin-right: .5em;
+}
 .fa-facebook {
 	color: #1778F2;
 }
@@ -323,7 +337,7 @@ footer {
     color: white;
 }
 .copyright a:hover {
-    color:#495371;
+    color:var(--accent-color-2);
 }
 .footer-updated {
     color: white;

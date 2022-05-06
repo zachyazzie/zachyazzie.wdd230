@@ -32,9 +32,17 @@
 	*/
 	.hero-container{
 		margin-bottom: 20px;
+		background-image: url(../assets/background-image-medium.jpg);
+		width: 100%;
 	   }
+	.large, .small{
+		display: none;
+	}
+	.medium {
+		display: block;
+	}
 	.preston-weather {
-		   transform: translate(0px, 50px);
+		   transform: translate(0px, 13px);
 		   margin-left: 0;
 		   width: 300px;
 	   }
