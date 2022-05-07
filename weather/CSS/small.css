@@ -108,7 +108,6 @@ header {
 /* HEADER END */
 
 /* NAV START */
-/* Small/Phone View ***************/ 
 
 #regular-view {
 	display: none;
@@ -158,13 +157,6 @@ nav {
 
 }
 
-
-/* the onclick JS toggles the .reponsive class from display none (.navigation li) to display block because the responsive class is added to the end of the class list like this in HTML.
-  <ul class="navigation responsive">
-*/
-
-
-
 /* NAV END */
 
 
@@ -185,13 +177,6 @@ nav {
 	text-align: center;
 }
 
-/*.hero-container{
- background-image: url(../assets/background-image-small.jpg);
- background-repeat: no-repeat;
- margin-bottom: 250px;
- height: 300px;
- background-position: center center;
-}*/
 .hero-container picture {
 	position: relative;
 	overflow:hidden;
