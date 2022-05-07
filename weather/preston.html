@@ -64,26 +64,33 @@
           <div class="picture-size-desc large">Large</div>
           <div class="picture-size-desc medium">Medium</div>
           <div class="picture-size-desc small">Small</div>
-          <div class="preston-weather">
-          <div class="preston-weather-summary">
-            <div class="preston-weather-info-title">
-              <h3>Weather Summary</h3>
+          <picture>
+            <source media="(min-width:1000px)" srcset="assets/background-image-large.jpg">
+            <source media="(min-width:590px)" srcset="assets/background-image-medium.jpg">
+            <img src="assets/background-image-small.jpg" alt="Flowers">
+          </picture>
+          <div class="weather-summary-container">
+            <div class="preston-weather">
+              <div class="preston-weather-summary">
+                <div class="preston-weather-info-title">
+                  <h3>Weather Summary</h3>
+                </div>
+                <div class="preston-weather-info-left">
+                  <p>Currently:</p>
+                  <p>High:</p>
+                  <p>Wind Chill:</p>
+                  <p>Humidity:</p>
+                  <p>Wind Speed:</p>
+                </div>
+                <div class="preston-weather-info-right">
+                  <p>Sunny</p>
+                  <p><span id="temperature">10</span>°F</p>
+                  <p><span id="wind-chill"></span><span id="wind-chill-f">°F</span></p>
+                  <p>69%</p>
+                  <p><span id="wind-speed">15</span> mph</p>
+                </div>
+              </div>  
             </div>
-            <div class="preston-weather-info-left">
-              <p>Currently:</p>
-              <p>High:</p>
-              <p>Wind Chill:</p>
-              <p>Humidity:</p>
-              <p>Wind Speed:</p>
-            </div>
-            <div class="preston-weather-info-right">
-              <p>Sunny</p>
-              <p><span id="temperature">10</span>°F</p>
-              <p><span id="wind-chill"></span><span id="wind-chill-f">°F</span></p>
-              <p>69%</p>
-              <p><span id="wind-speed">15</span> mph</p>
-            </div>
-          </div>  
           </div>
         </section>
 

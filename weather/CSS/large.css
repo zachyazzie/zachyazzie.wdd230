@@ -23,9 +23,9 @@
 		height: 350px;
 	   }
 	.preston-weather {
-		   transform: translate(0px, 32px);
+		   /*transform: translate(0px, 32px);
 		   margin-left: 0;
-		   margin-right: 0;
+		   margin-right: 0;*/
 		   width: 400px;
 	   }
 	.medium, .small{
@@ -54,6 +54,7 @@
 		margin-top: 1.5em;
 	}
 	.hero-container{
-		background-image: url(../assets/background-image-large.jpg);
+/*		background-image: url(../assets/background-image-large.jpg);*/
+		height: 485px;
 	}
 }

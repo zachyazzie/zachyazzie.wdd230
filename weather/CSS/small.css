@@ -185,26 +185,40 @@ nav {
 	text-align: center;
 }
 
-.hero-container{
+/*.hero-container{
  background-image: url(../assets/background-image-small.jpg);
  background-repeat: no-repeat;
  margin-bottom: 250px;
  height: 300px;
  background-position: center center;
+}*/
+.hero-container picture {
+	position: relative;
+	overflow:hidden;
+	top: -37px;
+
 }
 /*HERO WEATHER INFO START*/
 .large, .medium{
 	display: none;
 }
 .picture-size-desc {
-position: relative;
-text-align: right;
-top: 15px;
-right: 20px;
-color: var(--accent-color-4);
+	z-index: 10;
+	position: relative;
+	text-align: right;
+	top: 20px;
+	right: 20px;
+	color: var(--accent-color-4);
+}
+picture img {
+	overflow: hidden;
+}
+.weather-summary-container {
+	position: relative;
+	top: -14px;
 }
 .preston-weather {
-	transform: translate(0px, 280px);
+	/*transform: translate(0px, 280px);*/
 	margin-top: 2em;
 	margin: 0 auto;
 	width: 300px;
