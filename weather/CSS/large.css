@@ -56,6 +56,11 @@
 	/* GALLERY PAGE START */
 	.gallery {
 		grid-template-columns: 1fr 1fr 1fr;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.gallery-description {
+		display: block;
 	}
 	section :nth-child(1) .weather{
 		grid-row: 3/4;
@@ -80,6 +85,9 @@
 	section :nth-child(6) .weather{
 		grid-row: 4/5;
 		grid-column: 3/4;
+	}
+	picture:hover {
+		box-shadow: 0 0 2em #333333; 
 	}
 	/* GALLERY PAGE END */
 }
