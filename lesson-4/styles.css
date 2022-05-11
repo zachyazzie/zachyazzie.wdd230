@@ -1,3 +1,7 @@
+html {
+    font-family: Arial, sans-serif;
+    background-color: #cad2c5;
+}
 main {
     display: grid;
     grid-template-columns: 1fr;
@@ -5,33 +9,75 @@ main {
 
 h1 {
     grid-row: 1/2;
-    margin: 0 auto; 
+    margin: 0 auto;
+    margin-bottom: .5em;
+    padding-bottom: .25em;
+    border-bottom: 2px solid grey;
+    color: #124559;
     }
 
 picture {
     margin: 0 auto;
+    margin-top: .5em;
+    margin-bottom:.5em;
+    box-shadow: 0 0 10px #535353;
+    height: 400px;
     }
 
-.meme1 {
+.pic1 {
     grid-row: 2/3;
     }
 
-.meme2 {
+.pic2 {
     grid-row: 3/4;
     }
 
-.meme3 {
+.pic3 {
     grid-row: 4/5;
     }
 
-.meme4 {
+.pic4 {
     grid-row: 5/6;
     }
 
-.meme5 {
+.pic5 {
     grid-row: 6/7;
     }
 
-.meme6 {
+.pic6 {
     grid-row: 7/8;
+    }
+img[data-src] {
+        filter: blur(0.2em);
+    }
+        
+img {
+    filter: blur(0em);
+    transition: filter .6s;
+    }
+
+footer {
+    background: #598392;
+    padding-top: .12em;
+    padding-bottom: .12em;
+    margin-top: 1em;
+}
+.copyright {
+    color: white;
+    text-align: center;
+    margin-bottom: 0;
+}
+.copyright a:link {
+    color: white;
+}
+.copyright a:visited {
+    color: white;
+}
+.copyright a:hover {
+     color:#ffd6ba;
+}
+.footer-updated {
+    color: white;
+    text-align: center;
+    margin-top:0;
     }
