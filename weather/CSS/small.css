@@ -361,7 +361,14 @@ section :nth-child(5) .weather{
 section :nth-child(6) .weather{
 	grid-row: 8/9;
 }
-
+img[data-src] {
+	filter: blur(0.2em);
+}
+	
+img {
+filter: blur(0em);
+transition: filter .6s;
+}
 
 /* GALLERY PAGE END */
 
