@@ -7,21 +7,19 @@
 
   <link rel="stylesheet" href="styles.css">
   
-
-  <title>Site Plan</title>
+  <title>Lazy Loading</title>
 </head>
 
 <body>
-    <div id="content">
-        <h1 class="title">Progressive Loading (Images)</h1>
-        <picture class="meme1"><img src="assets/placeholder.jpg" data-src="assets/confused-meme.jpg" alt="confused meme"></picture>
-        <picture class="meme2"><img src="assets/placeholder.jpg" data-src="assets/face-meme.jpg" alt="face meme"></picture>
-        <picture class="meme3"><img src="assets/placeholder.jpg" data-src="assets/math-meme.jpg" alt="math meme"></picture>
-        <picture class="meme4"><img src="assets/placeholder.jpg" data-src="assets/monkey-meme.jpg" alt="monkey meme"></picture>
-        <picture class="meme5"><img src="assets/placeholder.jpg" data-src="assets/real-estate-meme.jpg" alt="free real estate meme"></picture>
-        <picture class="meme6"><img src="assets/placeholder.jpg" data-src="assets/spiderman-meme.jpg" alt="spiderman meme"></picture>
-    </div>
-    <script src="index.js"></script>
+  <main>
+    <h1 class="title">Progressive Loading (Images)</h1>
+    <picture class="meme1"><img class="lazy-loaded-image lazy" src='assets/placeholder.jpg' data-src='assets/confused-meme.jpg' alt='NAME'></picture>
+    <picture class="meme2"><img class="lazy-loaded-image lazy" src='assets/placeholder.jpg' data-src='assets/confused-meme.jpg' alt='NAME'></picture>
+    <picture class="meme3"><img class="lazy-loaded-image lazy" src='assets/placeholder.jpg' data-src='assets/confused-meme.jpg' alt='NAME'></picture>
+    <picture class="meme4"><img class="lazy-loaded-image lazy" src='assets/placeholder.jpg' data-src='assets/confused-meme.jpg' alt='NAME'></picture>
+    <picture class="meme6"><img class="lazy-loaded-image lazy" src='assets/placeholder.jpg' data-src='assets/confused-meme.jpg' alt='NAME'></picture>
+  </main>
+  <script src="index.js"></script>
 </body>
 
 </html>

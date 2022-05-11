@@ -138,4 +138,37 @@
 	.map-img img {
 		height: 190px;
 	}
+
+	/* GALLERY PAGE START */
+	.gallery {
+		grid-template-columns: 1fr 1fr;
+	}
+	picture {
+		margin: 0 auto;
+	}
+	section :nth-child(1) .weather{
+		grid-row: 3/4;
+		grid-column: 1/2;
+	}
+	section :nth-child(2) .weather{
+		grid-row: 3/4;
+		grid-column: 2/3;
+	}
+	section :nth-child(3) .weather{
+		grid-row: 4/5;
+		grid-column: 1/2;
+	}
+	section :nth-child(4) .weather{
+		grid-row: 4/5;
+		grid-column: 2/3;
+	}
+	section :nth-child(5) .weather{
+		grid-row: 5/6;
+		grid-column: 1/2;
+	}
+	section :nth-child(6) .weather{
+		grid-row: 5/6;
+		grid-column: 2/3;
+	}
+	/* GALLERY PAGE END */
 }
