@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preston page for Zachary Yazzie in WDD 230: Web Frontend Development I at Brigham Young University - Idaho">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;700;800&display=swap">
+  
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/small.css">
+  <link rel="stylesheet" href="CSS/medium.css">
+  <link rel="stylesheet" href="CSS/large.css">
+  
+
+  <title>Preston</title>
+</head>
+
+<body>
+    <div id="banner">
+      <div id="friday-banner">
+        <h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3>
+      </div>
+    </div>
+    <section class="header-all">
+    <div class="header-and-nav">
+      <div id="header-top">
+        <header>
+          <div class="logo">
+            <picture>
+              <img src="assets/logo.png" alt="weather logo">
+            </picture>
+            <section class="headings">
+              <h1>Alberta Forecast</h1>
+              <p class="m">Pretty good weather, 'eh?</p>
+            </section>
+          </div>  
+        </header>
+      </div>
+        <div class="menu-button">
+          <a id="ham" href="#" onclick="menuFunction()">☰</a>
+        </div>
+
+        <div id="header-bottom">
+          <nav id="regular-view">
+            <ul class="navigation">
+              <li><a href="#">Home</a></li>
+              <li><a href="preston.html">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a class="current-page" href="#">Storm Center</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  
+    <main>
+        <div class="storm-center-title-main">
+            <h1>Report-A-Storm</h1>
+        </div>
+        <form action="thanks.html">
+            <div class="form-container">
+                <div class="storm-center-title">
+                    <h2 class="form-top-h2">Contact Information</h2>
+                </div>
+                <p>
+                    <label for="name">Full Name*:</label>
+                    <input type="text" id="name" name="name" minlength="5" maxlength="50" size="20" placeholder="ex: John Doe" required
+                        pattern="[A-Z][A-Za-z' -]+">
+                </p>
+                <p class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="email@domain.com" size="20">
+                </p>
+                <p class="form-group">
+                    <label for="phone">Phone*:</label>
+                    <input type="tel" id="phone" name="tel" required minlength="10" placeholder="ex: 801-123-1234" size="20">
+                </p>
+                <p class="form-group">
+                    <label for="zip">Zip Code*:</label>
+                    <input type="text" id="zip" name="zip" required pattern="[0-9]*">
+                </p>
+                <div class="storm-center-title">
+                <h2>Storm Information</h2>
+                </div>
+                <p class="form-group">
+                    <label for="date">Storm Date:</label>
+                    <input type="date" id="date" name="date" size="5">
+                </p>
+                <p class="form-group">
+                    <label for="type">Storm Type:</label>
+                    <input class="storm-type" list="storm-type" id="type" name="type">
+                    <datalist id="storm-type">
+                        <option value="Flash Flood">
+                        <option value="Hail">
+                        <option value="Hurricane">
+                        <option value="Thunderstorm">
+                        <option value="Tornado">
+                        <option value="Other">
+                    </datalist>
+                </p>
+                <p>
+                    <label for="rating">Severity (1 to 10):</label>
+                    <input type="range" id="rating" value="1" min="1" max="10" step="1"
+                        oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span>&nbsp&nbsp</span><span id="ratingvalue">1</span>
+                </p>
+                <p class="form-group">
+                    <label for="region">Region:</label>
+                    <select id="region">
+                        <option selected disabled>Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </p>
+                <div class="storm-center-title">
+                    <h2>Are you in danger?</h2>
+                </div>
+                <div class="radio-buttons">
+                    <div class="radio-one">
+                        <label for="yes">Yes</label>
+                        <input type="radio" id="yes" name="danger" value="yes" checked>
+                    </div>
+
+                    <div class="radio-two">
+                        <label for="maybe">Maybe</label>
+                        <input type="radio" id="maybe" name="danger" value="maybe">
+                    </div>
+
+                    <div class="radio-three">
+                        <label for="no">No</label>
+                        <input type="radio" id="no" name="danger" value="no">
+                    </div>
+                </div>
+                <p class="form-group"> <strong>Additional Comments:</strong><br>
+                    <textarea id="styled" name="message" cols="40" rows="5" placeholder="What else should we know?"></textarea>
+                </p>
+            </div>
+            <div class="submit-button-container">
+                <input class="submit-button" type="submit" value="Submit">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Alberta Forecast | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="https://zachyazzie.github.io/index.html">Zach Yazzie</a></p>
+        <p class="footer-updated"><span id="date-in-footer"></span></p>
+      </footer>
+    
+      <script src="js/dates.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/windchill.js"></script>
+      <script src="js/lazyload.js"></script>
+      <script src="js/form.js"></script>
+      <script src="https://kit.fontawesome.com/9a21196212.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

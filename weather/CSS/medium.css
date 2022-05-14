@@ -171,4 +171,10 @@
 		grid-column: 2/3;
 	}
 	/* GALLERY PAGE END */
+
+	/* STORM CENTER START */
+	.storm-center-title-main {
+		width: 50%;
+	}
+	/* STORM CENTER END */
 }
