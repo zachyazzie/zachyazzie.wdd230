@@ -447,6 +447,18 @@ form textarea {
 
 
 /* STORM CENTER END */
+
+/* THANKS PAGE START */
+.thanks-main {
+	height: 400px;
+}
+.main-title, .thanks-message {
+	text-align: center;
+}
+.main-title {
+	margin-top: 3em;
+}
+/* THANKS PAGE END */
 /* FOOTER START*/
 
 footer {
