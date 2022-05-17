@@ -177,4 +177,47 @@
 		width: 50%;
 	}
 	/* STORM CENTER END */
+
+	/* HOME PAGE START */
+	#town-cards-home {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 1em;
+	}
+	#town-cards-home article {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		max-width: 10000000px;
+	}
+	.town-info {
+		padding-top: 5%;
+		margin-right: 1em;
+	}
+	@media (min-width: 828px) { 
+	.town-info {
+		padding-top: 10%;
+	}
+	}	
+	#town-cards-home article:nth-child(1) {
+		grid-column: 1/4;
+	}
+	#town-cards-home article:nth-child(2) {
+		grid-column: 1/4;
+	}
+	#town-cards-home article:nth-child(3) {
+		grid-column: 1/4;
+	}
+	#town-cards-home article:nth-child(4) {
+		grid-column: 1/4;
+	}
+	#town-cards-home article:nth-child(5) {
+		grid-column: 1/4;
+	}
+	#town-cards-home article:nth-child(6) {
+		grid-column: 1/4;
+	}
+	#town-cards-home article:nth-child(7) {
+		grid-column: 1/4;
+	}
+	/* HOME PAGE END */
 }
