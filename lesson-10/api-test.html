@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preston page for Zachary Yazzie in WDD 230: Web Frontend Development I at Brigham Young University - Idaho">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;700;800&display=swap">
+  
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/small.css">
+  <link rel="stylesheet" href="CSS/medium.css">
+  <link rel="stylesheet" href="CSS/large.css">
+  
+
+  <title>Preston</title>
+</head>
+
+<body>
+    <div id="banner">
+      <div id="friday-banner">
+        <h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3>
+      </div>
+    </div>
+    <section class="header-all">
+    <div class="header-and-nav">
+      <div id="header-top">
+        <header>
+          <div class="logo">
+            <picture>
+              <img src="assets/logo.png" alt="weather logo">
+            </picture>
+            <section class="headings">
+              <h1>Alberta Forecast</h1>
+              <p class="m">Pretty good weather, 'eh?</p>
+            </section>
+          </div>  
+        </header>
+      </div>
+        <div class="menu-button">
+          <a id="ham" href="#" onclick="menuFunction()">☰</a>
+        </div>
+
+        <div id="header-bottom">
+          <nav id="regular-view">
+            <ul class="navigation">
+              <li><a href="#">Home</a></li>
+              <li><a class="current-page" href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="stormcenter.html">Storm Center</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  
+    <main>
+        <h1>OpenWeatherMap.org API Test</h1>
+        <p>The current temperature in Preston, Idaho is <span id="current-temp"></span>&deg; F</p>
+        <hr>
+        <p>Image Icon Path Test: <span id="imagesrc"></span> &nbsp; <img src="" alt="" id="icon"></p>
+
+<script src="js/weatherapi.js"></script>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Alberta Forecast | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Zach Yazzie</a></p>
+        <p class="footer-updated"><span id="date-in-footer"></span></p>
+      </footer>
+      
+      <script src="js/weatherapi.js"></script>
+      <script src="js/dates.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/windchill.js"></script>
+      <script src="https://kit.fontawesome.com/9a21196212.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
