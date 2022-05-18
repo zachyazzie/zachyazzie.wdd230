@@ -27,9 +27,17 @@
         } 
     .site-plan-main {
         text-align: left;
-}    
-.site-plan-typography h1 {
-    text-align: left;
-}
+    }    
+    .site-plan-typography h1 {
+        text-align: left;
+    }
+
+    /* JSON PAGE START */
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
+    }
+    /* JSON PAGE START */
 
 }

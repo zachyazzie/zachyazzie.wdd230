@@ -481,6 +481,12 @@ form textarea {
 	margin: 0 auto;
 	margin-bottom: 1em;
 }
+@media (max-width: 474px) {
+	#town-cards-home article{
+		margin-left: 1em;
+		margin-right: 1em;
+	}
+}
 #town-cards-home img {
 	width: 100%;
 	border-radius: 15px;
@@ -518,5 +524,12 @@ footer {
     text-align: center;
 	margin-top:0;
     }
-
+.wireframe-page {
+	margin-bottom: 0;
+}
+.wireframe-links {
+	margin-top: 0;
+	margin-bottom: 1em;
+}
 /* FOOTER END */
+

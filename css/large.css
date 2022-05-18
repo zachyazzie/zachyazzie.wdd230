@@ -12,5 +12,9 @@
         margin: 0 auto;
     }
 
-    
+    /* JSON PAGE START */
+    .cards {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    /* JSON PAGE END */
 }
