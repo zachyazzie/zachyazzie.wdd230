@@ -1,6 +1,8 @@
-let temp = parseInt(document.querySelector("#temperature").textContent);
-let windSpeed = parseInt(document.querySelector("#wind-speed").textContent);
 
+let temp = parseInt(document.querySelector("#temperature").textContent);
+
+let windSpeed = parseInt(document.querySelector("#wind-speed").textContent);
+console.log(`windSpeed = ${windSpeed}`);
 let calculateWindChill = (temp, windSpeed) => {
     return Math.round(35.74 + (0.6215*temp) - (35.75 * (windSpeed ** 0.16)) + (0.4275 * (temp*(windSpeed ** 0.16))));
 };

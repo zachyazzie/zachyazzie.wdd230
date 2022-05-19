@@ -19,12 +19,9 @@ const output = (listOfTowns) => {
         townImgDiv.setAttribute('class', 'town-img');
         let townName = document.createElement("h2");
         townName.innerText = town.name;
-
         let imageElement = document.createElement("img");
         imageElement.setAttribute('src', `assets/${town.photo}`);
         imageElement.setAttribute('alt', town.name);
-
-        
         let motto = document.createElement("h3");
         motto.innerText = town.motto;
         motto.setAttribute('class', 'motto');

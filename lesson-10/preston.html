@@ -32,8 +32,8 @@
               <img src="assets/logo.png" alt="weather logo">
             </picture>
             <section class="headings">
-              <h1>Alberta Forecast</h1>
-              <p class="m">Pretty good weather, 'eh?</p>
+              <h1>Spudcast</h1>
+              <p class="m">Hail as big as the spuds!</p>
             </section>
           </div>  
         </header>
@@ -45,7 +45,7 @@
         <div id="header-bottom">
           <nav id="regular-view">
             <ul class="navigation">
-              <li><a href="#">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a class="current-page" href="#">Preston</a></li>
               <li><a href="#">Soda Springs</a></li>
               <li><a href="#">Fish Haven</a></li>
@@ -83,11 +83,7 @@
                   <p>Wind Speed:</p>
                 </div>
                 <div class="preston-weather-info-right">
-                  <p>Sunny</p>
-                  <p><span id="temperature">10</span>°F</p>
-                  <p><span id="wind-chill"></span><span id="wind-chill-f">°F</span></p>
-                  <p>69%</p>
-                  <p><span id="wind-speed">15</span> mph</p>
+                  
                 </div>
               </div>  
             </div>
@@ -97,31 +93,7 @@
         <section class="forecast">
           <h3>5 Day Forecast</h3>
           <div class="flex-forecast">
-            <div class="flex-col">
-              <span class="col-head">Mon</span>
-              <img src="assets/sunny.png" alt="sunny day">
-              <span class="data">76°F</span>
-            </div>
-            <div class="flex-col">
-              <span class="col-head">Tue</span>
-              <img src="assets/sunny.png" alt="sunny day">
-              <span class="data">76°F</span>
-            </div>
-            <div class="flex-col">
-              <span class="col-head">Wed</span>
-              <img src="assets/sunny.png" alt="sunny day">
-              <span class="data">76°F</span>
-            </div>
-            <div class="flex-col">
-              <span class="col-head">Thu</span>
-              <img src="assets/sunny.png" alt="sunny day">
-              <span class="data">76°F</span>
-            </div>
-            <div class="flex-col">
-              <span class="col-head">Fri</span>
-              <img src="assets/sunny.png" alt="sunny day">
-              <span class="data">76°F</span>
-            </div>
+            
           </div>
         </section>
 
@@ -164,13 +136,14 @@
         </section>
     </main>
     <footer>
-        <p class="copyright">&copy; Alberta Forecast | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Zach Yazzie</a></p>
+        <p class="copyright">&copy; Spudcast | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Zach Yazzie</a></p>
         <p class="footer-updated"><span id="date-in-footer"></span></p>
       </footer>
-    
-      <script src="js/dates.js"></script>
+
+      <script src="js/prestonweatherapi.js"></script>
+      <script src="js/fivedayforecast.js"></script>
       <script src="js/menu.js"></script>
-      <script src="js/windchill.js"></script>
+      <script src="js/prestonBanner.js"></script>
       <script src="https://kit.fontawesome.com/9a21196212.js" crossorigin="anonymous"></script>
 
 </body>
