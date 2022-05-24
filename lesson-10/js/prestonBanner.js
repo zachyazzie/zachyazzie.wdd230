@@ -28,3 +28,11 @@ else {
     dayOfWeek = 'Saturday';
     document.getElementById('friday-banner').style.display='none'
 }
+
+let dayInMonth = d.getDate();
+let year = d.getFullYear();
+let month = d.toLocaleString('default', { month: 'long' });
+let fullDate = `${dayOfWeek}, ${dayInMonth} ${month} ${year}`;
+
+document.getElementById("date-in-footer").innerHTML = fullDate;
+

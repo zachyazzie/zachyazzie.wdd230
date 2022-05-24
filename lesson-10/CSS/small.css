@@ -496,7 +496,9 @@ footer {
 	margin: 0 auto;
 	margin-bottom: 1em;
 }
-
+#town-cards-home {
+	margin-bottom: 1em;
+}
 #town-cards-home article{
 	background-color: var(--accent-color-4);
 	padding-left: 1em;
@@ -522,6 +524,12 @@ footer {
 }
 #town-cards-home h2 {
 	margin-top: 0;
+	margin-bottom: 0;
+}
+footer .wireframe-links {
+	margin-top: 0;
+}
+.home-footer {
 	margin-bottom: 0;
 }
 /* HOME PAGE END */
