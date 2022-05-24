@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Preston page for Zachary Yazzie in WDD 230: Web Frontend Development I at Brigham Young University - Idaho">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;400;700;800&display=swap">
+  
+  <link rel="stylesheet" href="CSS/normalize.css">
+  <link rel="stylesheet" href="CSS/small.css">
+  <link rel="stylesheet" href="CSS/medium.css">
+  <link rel="stylesheet" href="CSS/large.css">
+  
+
+  <title>Preston</title>
+</head>
+
+<body>
+    <div id="banner">
+      <div id="friday-banner">
+        <h3>Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park pavilion.</h3>
+      </div>
+    </div>
+    <section class="header-all">
+    <div class="header-and-nav">
+      <div id="header-top">
+        <header>
+          <div class="logo">
+            <picture>
+              <img src="assets/logo.png" alt="weather logo">
+            </picture>
+            <section class="headings">
+              <h1>Spudcast</h1>
+              <p class="m">Hail as big as the spuds!</p>
+            </section>
+          </div>  
+        </header>
+      </div>
+        <div class="menu-button">
+          <a id="ham" href="#" onclick="menuFunction()">☰</a>
+        </div>
+
+        <div id="header-bottom">
+          <nav id="regular-view">
+            <ul class="navigation">
+              <li><a href="index.html">Home</a></li>
+              <li><a class="current-page" href="#">Preston</a></li>
+              <li><a href="#">Soda Springs</a></li>
+              <li><a href="#">Fish Haven</a></li>
+              <li><a href="stormcenter.html">Storm Center</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </section>
+  
+    <main>
+        <h2 class="page-title">Preston Idaho</h2>
+        
+        <section class="hero-container">
+          <div class="picture-size-desc large">Large</div>
+          <div class="picture-size-desc medium">Medium</div>
+          <div class="picture-size-desc small">Small</div>
+          <picture>
+            <source media="(min-width:1000px)" srcset="assets/background-image-large.jpg">
+            <source media="(min-width:590px)" srcset="assets/background-image-medium.jpg">
+            <img src="assets/background-image-small.jpg" alt="Flowers">
+          </picture>
+          <div class="weather-summary-container">
+            <div class="preston-weather">
+              <div class="preston-weather-summary">
+                <div class="preston-weather-info-title">
+                  <h3>Weather Summary</h3>
+                </div>
+                <div class="preston-weather-info-left">
+                  <p>Currently:</p>
+                  <p>High:</p>
+                  <p>Wind Chill:</p>
+                  <p>Humidity:</p>
+                  <p>Wind Speed:</p>
+                </div>
+                <div class="preston-weather-info-right">
+                  
+                </div>
+              </div>  
+            </div>
+          </div>
+        </section>
+
+        <section class="forecast">
+          <h3>5 Day Forecast</h3>
+          <div class="flex-forecast">
+            
+          </div>
+        </section>
+
+        <section class="preston-article">
+          <h3>A Day to Celebrate</h3>
+          <div class="text-wrap">
+            <div class="article-img-container">
+              <img src="assets/community-singing.jpeg" alt="man and woman singing">
+            </div>
+            <p>
+              Last week, the town of Preston celebrated international waffle day by turning the day into an
+              amazing festival. Preston is known for its deep love of breakfast foods. From the humble pancake
+              to the complex breakfast sandwich. Being that it was international waffle day, Preston celebrated
+              in style with a waffle cook-off! Types of featured waffles were: belgian, classic store mix, potato, and even
+              Eggo toaster waffles. It was an all day event with music and games in the park for the family. The 
+              gates opened at 6AM and closed at 7PM. This all day festival was a true town bonding event. For all 
+              who were unable to attend, mark your calendar for next year so we can all come together as a community 
+              and celebrate the best food for breakfast!
+            </p>
+        </div>
+          
+        </section>
+
+        <section class="contact">
+          <div class="map-img">
+            <img src="assets/preston-map.jpg" alt="map of preston idaho">
+          </div>
+          <div class="contact-info">
+            <h4>Alberta Forecast</h4>
+            <p><i class="fa-solid fa-location-dot fa-lg"></i> 221B Baker Street</p>
+            <p class="address-bottom">Preston, Idaho 83263</p>
+            <p><i class="fa-solid fa-phone"></i> 555-555-5555</p>
+            <p class="contact-end"><i class="fa-solid fa-envelope"></i> albertaforecast@email.com</p>
+            <div class="social-icons">
+              <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+              <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+              <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter fa-xl"></i></a>
+              <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+            </div>
+          </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copy; Spudcast | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="../index.html">Zach Yazzie</a></p>
+        <p class="footer-updated"><span id="date-in-footer"></span></p>
+      </footer>
+ 
+      <script src="js/prestonweatherapi.js"></script>
+      <script src="js/fivedayforecast.js"></script>
+      <script src="js/menu.js"></script>
+      <script src="js/prestonBanner.js"></script>
+      <script src="https://kit.fontawesome.com/9a21196212.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
