@@ -253,6 +253,7 @@ picture img {
 .preston-article {
 	margin-left: 2em;
 	margin-right: 2em;
+	margin-bottom: 1em;
 }
 .preston-article h3 {
 	text-align: center;
