@@ -12,6 +12,11 @@ const output = (listOfTowns) => {
         //averageRainfall
         //events['...',...]
         if (town.name == 'Soda Springs' || town.name == 'Fish Haven' || town.name == 'Preston') {
+
+            let eventArticle = document.createElement("article");
+            console.log(town.events)
+            console.log(town.events.length)
+
             let article = document.createElement("article");
             let townInfoDiv = document.createElement("div");
             townInfoDiv.setAttribute('class', 'town-info');

@@ -1,4 +1,4 @@
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=75486451e28df760e1f3e0981126cb56";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5585010&units=imperial&appid=75486451e28df760e1f3e0981126cb56";
 
 // SODA SPRINGS: 5607916
 // FISH HAVEN: 5585010

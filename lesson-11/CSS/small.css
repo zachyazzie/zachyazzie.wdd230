@@ -533,3 +533,31 @@ footer .wireframe-links {
 	margin-bottom: 0;
 }
 /* HOME PAGE END */
+
+/* EVENT SECTIONS */
+.event-article {
+	display: block;
+}
+.town-events {
+	text-align: center;
+	background-color: var(--accent-color-4);
+	color: var(--accent-color-3);
+	max-width: 550px;
+	margin: 0 auto;
+	padding-top: 1em;
+	padding-bottom: 1.25em;
+	border-radius: 20px;;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+.town-events h3 {
+	margin-top: 0;
+	border-bottom: 1px solid var(--accent-color-3);
+	width: 80%;
+	margin: 0 auto;
+}
+.town-events p {
+	margin-bottom: 0;
+}
+
+/* EVENT SECTIONS */
