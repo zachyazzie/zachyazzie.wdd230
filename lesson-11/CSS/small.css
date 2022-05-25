@@ -73,6 +73,9 @@ header {
 	
 	max-width: 1000px;
 }
+header a {
+	text-decoration: none;
+}
 .logo {
 	display: flex;
 	align-items: center;

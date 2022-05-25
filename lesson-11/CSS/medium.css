@@ -135,8 +135,9 @@
 		margin-top: 3.4em;
 		grid-column: 2/4;
 	}
-	.map-img img {
-		height: 190px;
+	.map-img iframe {
+		height: 200px;
+		width: 200px;
 	}
 
 	/* GALLERY PAGE START */

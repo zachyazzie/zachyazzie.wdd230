@@ -41,8 +41,9 @@
 		max-width: 800px;
 
 	}
-	.map-img img {
+	.map-img iframe {
 		height: 250px;
+		width: 250px;
 	}
 	.map-img {
 		margin-top: 1.5em;
