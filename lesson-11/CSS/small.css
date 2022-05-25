@@ -331,7 +331,7 @@ picture img {
 	margin-right: 1em;
 	grid-gap: 2em;
 }
-.gallery picture {
+.gallery .weather {
 	margin: 0 auto;
 	transition: box-shadow .3s;
 	display: flex;

@@ -84,7 +84,7 @@
 		grid-row: 4/5;
 		grid-column: 3/4;
 	}
-	.gallery picture:hover {
+	.gallery .weather:hover {
 		box-shadow: 0 0 2em #333333; 
 	}
 	/* GALLERY PAGE END */
