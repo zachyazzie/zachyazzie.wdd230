@@ -1,0 +1,19 @@
+@media (min-width: 1000px) { 
+	nav {
+		max-width: 1300px;
+	}
+    .logo {
+		max-width: 1300px;
+	}
+	.hero-container{
+		margin-bottom: 20px;
+		height: 350px;
+	   }
+	.preston-weather {
+		   width: 400px;
+	   }
+	.flex-forecast {
+		max-width: 800px;
+	}
+
+}

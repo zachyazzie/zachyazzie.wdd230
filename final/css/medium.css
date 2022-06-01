@@ -1,0 +1,81 @@
+@media (min-width: 590px) { 
+    .navigation {
+		display: flex;
+	}
+	.navigation li {
+		display: block;
+		flex: 1 1 auto;
+	}
+	.navigation a {
+		text-align: center;
+	}
+
+	.hero-container{
+		margin-bottom: 20px;
+
+		width: 100%;
+		height: 385px;
+	   }
+	.hero-container picture { 
+		top: -35px;
+	}
+	.menu-button {
+		display: none;
+	}
+	#regular-view {
+		display: block !important;
+		grid-row: 2/3;
+		grid-column: 1/7;
+		width: 100%;
+	}
+	.preston-weather-summary {
+		background-color: rgba(238, 108, 77, .9);
+
+	}
+	/*FORECAST TABLE START*/
+	.forecast {
+		display: block;
+		text-align: center;
+	}
+	.flex-forecast {
+		display: flex;
+		flex-flow: row wrap;
+		max-width: 560px;
+		margin: 0 auto;
+		margin-bottom: 2em;;
+	}
+	.flex-col {
+		flex: 1 1 auto;
+		background-color: var(--secondary-color);
+	}
+	.flex-col, .column-col, .grid-col {
+		border-bottom: 1px solid var(--accent-color-3);
+		border-left: 1px solid var(--accent-color-3);
+		border-right: 1px solid var(--accent-color-3);
+		text-align: center;
+	}
+	.col-head {
+		display: block;
+		padding: 5px;
+		border-bottom: 1px solid var(--accent-color-3);
+		text-align: center;
+	}
+	.forecast img {
+		border-radius: 100%;
+		padding: 0.25rem;
+		margin-top: .5em;
+	}
+	.data {
+		display: block;
+		padding: 0 5px 5px;
+		font-weight: 700;
+		text-align: center;
+	}
+	.col-head,th {
+		font-weight: 700;
+		font-size: 1rem;
+		background-color: var(--primary-color);
+		color: white;
+	}
+	/*FORECAST TABLE END*/
+}

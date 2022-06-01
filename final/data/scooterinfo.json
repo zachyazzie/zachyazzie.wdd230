@@ -1,0 +1,106 @@
+{
+    "scooters": [
+      {
+        "model": "Honda Metro Scooter",
+        "maxPersons": 1,
+        "withReservation": [
+            {
+            "halfDay": "$20",
+            "fullDay": "$30"
+            }
+        ],
+        "withoutReservation": [
+            {
+            "halfDay": "$25",
+            "fullDay": "$35"
+            }
+        ],
+        "image": "Honda-Metro-Scooter.jpg"
+      },
+      {
+        "model": "Honda Dio Scooter",
+        "maxPersons": 2,
+        "withReservation": [
+            {
+            "halfDay": "$30",
+            "fullDay": "$40"
+            }
+        ],
+        "withoutReservation": [
+            {
+            "halfDay": "$35",
+            "fullDay": "$45"
+            }
+        ],
+        "image": "Honda-Dio-Scooter.jpg"
+      },
+      {
+        "model": "Honda PCX150 Scooter",
+        "maxPersons": 2,
+        "withReservation": [
+            {
+            "halfDay": "$40",
+            "fullDay": "$50"
+            }
+        ],
+        "withoutReservation": [
+            {
+            "halfDay": "$45",
+            "fullDay": "$55"
+            }
+        ],
+        "image": "Honda-PCX150-Scooter.jpg"
+      },
+      {
+        "model": "Honda Pioneer ATV",
+        "maxPersons": 4,
+        "withReservation": [
+            {
+            "halfDay": "$50",
+            "fullDay": "$70"
+            }
+    ],
+        "withoutReservation": [
+            {
+            "halfDay": "$60",
+            "fullDay": "$80"
+            }
+        ],
+        "image": "Honda-Pioneer-ATV.jpg"
+      },
+      {
+        "model": "Jeep Wrangler—4 door with a\/c",
+        "maxPersons": 5,
+        "withReservation": [
+            {
+            "halfDay": "$70",
+            "fullDay": "$100"
+            }
+    ],
+        "withoutReservation": [
+            {
+            "halfDay": "$85",
+            "fullDay": "$125"
+            }
+        ],
+        "image": "Jeep-Wrangler—4-door.jpg"
+      },
+      {
+        "model": "Jeep Wrangler—2 door",
+        "maxPersons": 4,
+        "withReservation": [
+            {
+            "halfDay": "$60",
+            "fullDay": "$85"
+            }
+        ],
+        "withoutReservation": [
+            {
+            "halfDay": "$70",
+            "fullDay": "$90"
+            }
+        ],
+        "image": "Jeep-Wrangler—2-door.jpg"
+      } 
+    ]
+  }
