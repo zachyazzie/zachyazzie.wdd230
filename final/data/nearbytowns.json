@@ -1,0 +1,24 @@
+{
+    "towns": [
+      {
+        "name": "Playa Chen Rio",
+        "photo": "playa-chen-rio.jpg",
+        "description": "An incredibly gorgeous beach in Cozumel. The white sands and warm air will have you coming back over and over."
+      },
+      {
+        "name": "Los Cinco Soles",
+        "photo": "los-cinco-soles.jpg",
+        "description": "A charming market in town where all sorts of hancrafted souvenirs and momentos can be purchased. Be sure to stop here to take your trip home with you."
+      },
+      {
+        "name": "Punta Sur Ecological Park",
+        "photo": "punta-sur-ecological-park.jpg",
+        "description": "Punta Sur is a haven of natural beauty. With its beaches, flora, and wildlife, you'll be swept away in the wonders of Cozumel."
+      },
+      {
+        "name": "La Candela",
+        "photo": "la-candela.jpg",
+        "description": "La Candela is a must visit restaurant if you're looking for an authentic Mexican food experience. The friendly staff will make you feel like family!"
+      }
+    ]
+  }
