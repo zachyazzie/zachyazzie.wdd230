@@ -22,8 +22,6 @@
 	/* HOME PAGE START*/
 	/* main-hero SECTION START */
 	.main-hero {
-	
-		max-width: auto;
 		background-size: cover;
 		height: 350px;
 	}

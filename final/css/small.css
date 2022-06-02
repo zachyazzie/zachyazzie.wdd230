@@ -178,7 +178,6 @@ nav {
 	grid-column: 1/4;
 	background-image: url("../assets/home-hero.jpg");
 	background-repeat: no-repeat;
-	max-width: auto;
 	background-size: cover;
 	height: 300px;
 	background-position: center;
