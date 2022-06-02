@@ -60,20 +60,16 @@
  <!--START MAIN-->
     <main>
       <section class="main-hero">
-        <h1>Scoots</h1>
-        <p></p>
-        <img a href="" alt="">
+        <h1>Contact Us</h1>
+
       </section>
 
       <section class="home-rental-info">
-        <h3>Rental Overview</h3>
+        <h3>Essential Rental Information</h3>
         <ul>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
+          <li>Reservations rate requires 24 hour prior notification</li>
+          <li>A $50 security deposit is required to confirm reservations</li>
+          <li>Rentals may be returned to either location listed below</li>
         </ul>
       </section>
 
@@ -89,8 +85,27 @@
         </div>
       </section>
 
-      <section class="home-contact">
-
+      <section class="contact-form">
+        <h2>Leave a comment and we'll help you get started on your adventure!</h2>
+        <form action="thanks.html">
+          <div class="form-container">
+              <p>
+                  <label for="name">Full Name*:</label>
+                  <input type="text" id="name" name="name" minlength="5" maxlength="50" size="20" placeholder="ex: John Doe" required
+                      pattern="[A-Z][A-Za-z' -]+">
+              </p>
+              <p class="form-group">
+                  <label for="email">Email*:</label>
+                  <input type="email" id="email" name="email" placeholder="email@domain.com" size="20" required>
+              </p>
+              <p class="form-group"> <strong>Additional Comments:</strong><br>
+                  <textarea id="styled" name="message" cols="40" rows="5" placeholder="Make my adventure happen!"></textarea>
+              </p>
+          </div>
+          <div class="submit-button-container">
+              <input class="submit-button" type="submit" value="Send Request">
+          </div>
+        </form>
       </section>
 
     </main>
@@ -99,12 +114,18 @@
 <!--START FOOTER-->
   <footer>
     <p class="copyright">&copy; Scoots | <a href="https://www.byui.edu/online">BYUI Online Learning</a> | <a href="https://zachyazzie.github.io/index.html">Zach Yazzie</a></p>
-    <p class="footer-updated home-footer"><span id="date-in-footer"></span></p>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook fa-xl"></i></a>
+      <a href="https://www.pinterest.com/"><i class="fa-brands fa-pinterest fa-xl"></i></a>
+      <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter fa-xl"></i></a>
+      <a href="https://www.whatsapp.com/"><i class="fa-brands fa-whatsapp fa-xl"></i></a>
+    </div>
   </footer>
 <!--END FOOTER-->
 
 <!--START JS-->
     <script src="js/menu.js"></script>
+    <script src="https://kit.fontawesome.com/9a21196212.js" crossorigin="anonymous"></script>
 <!--END JS-->
 
 </body>
