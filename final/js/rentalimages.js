@@ -9,11 +9,12 @@ const scooterImages = (scooteImageList) => {
         imageElement.setAttribute('src', `assets/${scooter.image}`);
         imageElement.setAttribute('alt', scooter.model);
         
-        let modelDesc = document.createElement("p");
+        let modelDesc = document.createElement("h4");
         modelDesc.textContent = scooter.model;
         
-        imgDiv.appendChild(imageElement);
         imgDiv.appendChild(modelDesc);
+        imgDiv.appendChild(imageElement);
+        
 
         document.querySelector('.rental-gallery').appendChild(imgDiv);
     })

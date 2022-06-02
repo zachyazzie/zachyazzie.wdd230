@@ -1,8 +1,5 @@
 const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=3530103&units=imperial&appid=75486451e28df760e1f3e0981126cb56";
 
-// SODA SPRINGS: 5607916
-// FISH HAVEN: 5585010
-
 const output = (weatherList) => {
     //create parent article to hold all elements
     let article = document.createElement("article");
@@ -20,11 +17,11 @@ const output = (weatherList) => {
     maxTempP.appendChild(maxTempSpan);
 
     
-    //append to preston-weather-info-right
+    //append to weather-summary-info-right
     article.appendChild(currentCondition);
     article.appendChild(maxTempP);
 
-    document.querySelector('.preston-weather-info-right').appendChild(article);
+    document.querySelector('.weather-summary-info-right').appendChild(article);
 }
 
 fetch(apiURL)
